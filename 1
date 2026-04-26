@@ -2397,7 +2397,7 @@ function Arqel:Launch()
             Arqel:Notify("Executed", "Script loaded successfully!", 2, "success")
             if Arqel.Callbacks.OnSuccess then Arqel.Callbacks.OnSuccess() end return
         end
-        getgenv().SCRIPT_KEY = nil
+        getgenv().SCRIPT_KEY = "KEYLESS"
     end
     getgenv().ArqelClosed = false
     EnsureIconsReady(function()
