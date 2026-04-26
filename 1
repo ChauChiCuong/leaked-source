@@ -1422,7 +1422,7 @@ end
 
 local function handleKeylessSkip()
     getgenv().SCRIPT_KEY = "KEYLESS"
-    getgenv().ArqelLoaded = false
+    getgenv().ArqelLoaded = True
     Arqel:Notify("Access Granted", "Keyless access approved!", 3, "success")
     task.wait(0.3)
     if Arqel.Callbacks.OnSuccess then Arqel.Callbacks.OnSuccess() end
